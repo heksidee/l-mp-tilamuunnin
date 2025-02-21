@@ -53,6 +53,7 @@ function lämpötilaMuunnin(event) {
             absNollaP = -273.15 + 273.15
             break;
     }
+    absNollaP = absNollaP.toFixed(2);
     if (muunnos < absNollaP) {
         document.getElementById("nollap").innerHTML = "Syöttämäsi lämpötila on alle absoluuttisen nollapisteen joka on -273,15 celsius -astetta."
     }
